@@ -1,0 +1,29 @@
+name: q2
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  power5:
+    name: Windows PowerShell 5.1
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: powershell
+    steps: &ps
+      - uses: actions/checkout@v4
+      - name: Probe
+        run: |
+          Write-Host "PSVersion=$($PSVersionTable.PSVersion)"
+          exit 0
+  pwsh7:
+    name: PowerShell 7
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps: *ps

@@ -1,0 +1,26 @@
+name: q1
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  power:
+    name: matrix shell (${{ matrix.shell }})
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shell: [powershell, pwsh]
+    defaults:
+      run:
+        shell: ${{ matrix.shell }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe
+        run: |
+          Write-Host "PSVersion=$($PSVersionTable.PSVersion)"
+          exit 0
