@@ -1,0 +1,57 @@
+name: probe-a
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: python (linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Syntax check
+        run: python3 -m compileall -q scripts tools tests
+
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Example snapshot is well formed
+        run: python3 scripts/nxstudio_cred_port.py validate examples/session.example.json
+
+      - name: Example snapshot validates against the JSON Schema
+        run: |
+          python3 -m pip install --quiet jsonschema
+          python3 - <<'PY'
+          import json, jsonschema
+          schema = json.load(open('schema/session.schema.json', encoding='utf-8'))
+          data = json.load(open('examples/session.example.json', encoding='utf-8-sig'))
+          jsonschema.validate(instance=data, schema=schema)
+          print('schema ok')
+          PY
+
+      - name: Credential-manager subcommands refuse to run on Linux
+        run: |
+          if python3 scripts/nxstudio_cred_port.py list; then
+            echo "list should have failed on a non-Windows runner"; exit 1
+          fi
+
+      - name: No live tokens committed
+        run: |
+          set -e
+          # A real export starts with a JWT header: eyJ... in the BlobBase64 field.
+          if grep -rInE '"BlobBase64"[[:space:]]*:[[:space:]]*"eyJ[A-Za-z0-9_-]{40,}' \
+               --exclude-dir=.git --exclude-dir=dist . ; then
+            echo "::error::a live JWT appears to be committed"
+            exit 1
+          fi
+          echo "no live tokens found"
