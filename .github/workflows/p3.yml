@@ -1,0 +1,45 @@
+name: p3
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  powershell:
+    name: powershell (${{ matrix.shell }})
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Both shells matter, and they disagree: `-Encoding UTF8` writes a BOM
+        # on 5.1 but not on 7, and $PSScriptRoot is empty while a
+        # [CmdletBinding()] param block is being bound on both.
+        shell: [powershell, pwsh]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax check
+        run: |
+          $files = @(
+            'scripts/nxstudio_login_transfer.ps1',
+            'scripts/nxstudio_win10_unlock.ps1',
+            'tools/ui_probe2.ps1',
+            'tools/ui_probe3.ps1'
+          )
+          $failed = $false
+          foreach ($f in $files) {
+            if (-not (Test-Path $f)) { Write-Host "skip (absent): $f"; continue }
+            $errors = $null
+            [System.Management.Automation.Language.Parser]::ParseFile(
+              (Resolve-Path $f).Path, [ref]$null, [ref]$errors) | Out-Null
+            if ($errors.Count) {
+              $failed = $true
+              $errors | ForEach-Object { Write-Host "::error file=$f,line=$($_.Extent.StartLineNumber)::$($_.Message)" }
+            } else {
+              Write-Host "ok: $f"
+            }
+          }
+          if ($failed) { exit 1 }
