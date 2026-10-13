@@ -1,0 +1,24 @@
+# 安装后系统状态（现场采集）
+# 时间: 2026-10-13 12:40:55
+# 系统: Microsoft Windows NT 10.0.19044.0  Build 19044
+
+[卸载列表]
+  尼康工坊 | 1.10.1 | C:\Program Files\Nikon\NXStudio\
+  Nikon Transfer 2 | 2.21.0 | C:\Program Files (x86)\Nikon\Nikon Transfer 2\
+
+[主程序]
+       402,344 B  3.1.0.3001   C:\Program Files\Nikon\NXStudio\NkLDTr.exe
+     9,091,496 B  1.10.1.3003  C:\Program Files\Nikon\NXStudio\NXStudio.exe
+        81,832 B  1.10.1.3003  C:\Program Files\Nikon\NXStudio\SaveProcess.exe
+
+[WinVer.ini 现状]
+[Info]
+FileVer = 1
+
+[WinOSVersion]
+10.0 = 10.0.19041
+11.0 = 
+
+
+[WinVer.ini 备份]
+  存在: C:\Program Files\Common Files\Nikon\WinVer.ini.bak_nxstudio_win10（原版，10.0 = 10.0.21999）

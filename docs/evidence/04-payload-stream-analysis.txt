@@ -1,0 +1,55 @@
+file 262,628,168 bytes; overlay starts 0x1BFC00 (260,794,184 bytes)
+
+zlib/gzip candidates in overlay: 194
+  0x001CD15C zlib1   fail: error
+  0x001E8B6C zlib1   fail: error
+  0x001FF72A zlib1   fail: error
+  0x0028DD2E zlib1   fail: error
+  0x002A283A zlib1   fail: error
+  0x002C0F54 zlib1   fail: error
+  0x002D68DC zlib1   fail: error
+  0x002E8298 zlib1   fail: error
+  0x0030B6B6 zlib1   fail: error
+  0x00318746 zlib1   fail: error
+  0x00318762 zlib1   fail: error
+  0x00328CEA zlib1   fail: error
+  0x0032EC71 zlib1   fail: error
+  0x0033DDE1 zlib1   fail: error
+  0x00341A01 zlib1   fail: error
+  0x00351536 zlib1   fail: error
+  0x00378BA8 zlib1   fail: error
+  0x00392608 zlib1   fail: error
+  0x0039CA60 zlib1   fail: error
+  0x0039E8F6 zlib1   fail: error
+  0x003ACD55 zlib1   fail: error
+  0x003B1130 zlib1   fail: error
+  0x003ECF31 zlib1   fail: error
+  0x004121BD zlib1   fail: error
+  0x004231E5 zlib1   fail: error
+  0x00443AB4 zlib1   fail: error
+  0x0044D078 zlib1   fail: error
+  0x00453200 zlib1   fail: error
+  0x00457F50 zlib1   fail: error
+  0x00458664 zlib1   fail: error
+  0x004750C6 zlib1   fail: error
+  0x0047B2FB zlib1   fail: error
+  0x0047FD7F zlib1   fail: error
+  0x004841AE zlib1   fail: error
+  0x00486BFC zlib1   fail: error
+  0x0048FBF7 zlib1   fail: error
+  0x004942C3 zlib1   fail: error
+  0x004968D5 zlib1   fail: error
+  0x004A81B1 zlib1   fail: error
+  0x004AFC2D zlib1   fail: error
+
+LZMA prop-byte candidates (5D 00 00 xx) in overlay:
+  0x00436FFB hdr=5d00006e05b0d8ceb2d9c1b409 dictsize=0x56E0000 usize=699396982901233840
+  0x00B49DC3 hdr=5d0000d93bc9fb6bb24581aa21 dictsize=0x3BD90000 usize=2425893485638581193
+  0x00FB8614 hdr=5d000008941cd452bffc4fb9e5 dictsize=0x94080000 usize=16553349852337198108
+  0x02215E6D hdr=5d0000b53270a7bddc7f12a0bf dictsize=0x32B50000 usize=13808056797891503984
+  0x0234CB1A hdr=5d0000a0ecae18247f8acd7ba8 dictsize=0xECA00000 usize=12140523215229556910
+  0x03064584 hdr=5d0000d4eb6e35c275aa88bccb dictsize=0xEBD40000 usize=14680759151022454126
+  0x0351C441 hdr=5d000000dc68f775010c0677ff dictsize=0xDC000000 usize=18408188650534074216
+  0x06FEF0C7 hdr=5d000023f455d7a9d716325a38 dictsize=0xF4230000 usize=4060613087716824917
+  0x072CE924 hdr=5d0000ed9bb5b7c3296f3836f4 dictsize=0x9BED0000 usize=17597314644090009525
+  0x077EFBEE hdr=5d0000e0204e4913fe1ebc6514 dictsize=0x20E00000 usize=1469787694704052558

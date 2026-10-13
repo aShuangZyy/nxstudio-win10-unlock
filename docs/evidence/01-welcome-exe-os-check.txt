@@ -1,0 +1,62 @@
+
+########## control run: shipped WinVer.ini (10.0.21999) ##########
+WinVer.ini: [Info] | FileVer = 1 |  | [WinOSVersion] | 10.0 = 10.0.21999 | 11.0 =  |  | 
+pid=1716 hasExited=False exit=n/a
+windows: 1
+  WINDOW: '安装程序' class=#32770
+    [ControlType.Pane] 确定
+    [ControlType.Pane] 您的操作系统上未运行 尼康工坊。
+(killed)
+--- Welcome_NXST_Installer.log ---
+[10/13/26 11:54:46] OS Info : Windows 10.0 (10.0.19044)
+
+[10/13/26 11:54:46] RegLang Auto Select : Name=NX Studio , Region=INT, Language=CN
+
+[10/13/26 11:54:46] GetSystemDefaultLangID : 2052
+
+[10/13/26 11:54:46] OS Language : CN 
+
+[10/13/26 11:54:46] GetLocaleInfo : China
+
+[10/13/26 11:54:46] INT : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:46] NSA : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:46] CND : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:46] JPN : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:46] EUR : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:46] Nk_installerDef : NormalExecution
+
+
+
+########## patched run: relaxed WinVer.ini (10.0.19041) ##########
+WinVer.ini: [Info] | FileVer = 1 |  | [WinOSVersion] | 10.0 = 10.0.19041 | 11.0 =  |  | 
+pid=18080 hasExited=True exit=0
+windows: 0
+--- Welcome_NXST_Installer.log ---
+[10/13/26 11:54:55] OS Info : Windows 10.0 (10.0.19044)
+
+[10/13/26 11:54:55] RegLang Auto Select : Name=NX Studio , Region=INT, Language=CN
+
+[10/13/26 11:54:55] GetSystemDefaultLangID : 2052
+
+[10/13/26 11:54:55] OS Language : CN 
+
+[10/13/26 11:54:55] GetLocaleInfo : China
+
+[10/13/26 11:54:55] INT : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:55] NSA : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:55] CND : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:55] JPN : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:55] EUR : CN DE KR JP IT TR RU NL TW ES FR EN 
+
+[10/13/26 11:54:55] Nk_installerDef : NormalExecution
+
+

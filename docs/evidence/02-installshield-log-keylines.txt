@@ -1,0 +1,23 @@
+# InstallShield Suite 引导器关键日志（已脱敏，完整日志见本目录说明）
+#
+# 三段：① 未改门槛时按 5 中止  ② 只改临时文件仍中止  ③ 三处全改后安装成功
+#10-13-2026[12:28:22 下午]: *** InstallShield suite engine (Unicode) started
+10-13-2026[12:28:22 下午]: Engine: running with elevated privileges: yes
+10-13-2026[12:28:24 下午]: Initializing resource 'welcome\Items\Launch.ini', type 1
+10-13-2026[12:28:24 下午]: Resource was staged to 'C:\Users\<user>\AppData\Local\Temp\{74ACADBF-A5A8-430A-B0A1-0F10A51DFE28}\{3536D6BE}\welcome\Items\Launch.ini'
+10-13-2026[12:28:25 下午]: Resource was staged to 'C:\Users\<user>\AppData\Local\Temp\{74ACADBF-A5A8-430A-B0A1-0F10A51DFE28}\{3536D6BE}\Launch_NXST_P.ini'
+10-13-2026[12:28:25 下午]: Initializing resource 'WinVer.ini', type 1
+10-13-2026[12:28:25 下午]: Resource was staged to 'C:\Users\<user>\AppData\Local\Temp\{74ACADBF-A5A8-430A-B0A1-0F10A51DFE28}\{3536D6BE}\WinVer.ini'
+10-13-2026[12:28:25 下午]: Engine: property 'ExitFlg' value now 'false'
+10-13-2026[12:28:25 下午]: Running event 'LogDelete'
+10-13-2026[12:28:25 下午]: Launching InstallScript action in function 'LogDelete'
+10-13-2026[12:28:27 下午]: Action 'LogDelete' returned status 0x00000000
+10-13-2026[12:28:27 下午]: Running event 'WelcomeStart'
+10-13-2026[12:28:27 下午]: Launching InstallScript action in function 'WelcomeStart'
+10-13-2026[12:28:32 下午]: Action 'WelcomeStart' returned status 0x00000000
+10-13-2026[12:28:32 下午]: Running event 'DisplayRTF_Readme'
+10-13-2026[12:28:33 下午]: Launching InstallScript action in function 'DisplayRTF_Readme'
+10-13-2026[12:28:34 下午]: Action 'DisplayRTF_Readme' returned status 0x00000000
+10-13-2026[12:29:35 下午]: State manager: removing state info
+10-13-2026[12:29:45 下午]: Original exit status: 0x00000000, final exit status: 0x00000000
+10-13-2026[12:29:45 下午]: State manager: removing staging files from: C:\Users\<user>\AppData\Local\Temp\{74ACADBF-A5A8-430A-B0A1-0F10A51DFE28}\{3536D6BE}\

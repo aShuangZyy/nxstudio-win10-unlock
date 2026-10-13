@@ -1,0 +1,31 @@
+12:28:19.546  会话开始 (管理员=True, Click=True, StubWelcome=False)
+12:28:19.557  安装包: <REPO_DIR>\S-NXSTDO-011001WF-ALLIN-ALL___ (1).exe
+12:28:19.558  目标最小版本: 10.0.19041
+12:28:19.568  全局文件 C:\Program Files\Common Files\Nikon\WinVer.ini 原内容: [Info] | FileVer = 1 |  | [WinOSVersion] | 10.0 = 10.0.21999 | 11.0 =  |  |  |
+12:28:19.572  已备份 C:\Program Files\Common Files\Nikon\WinVer.ini -> C:\Program Files\Common Files\Nikon\WinVer.ini.bak_nxstudio_win10
+12:28:19.575  已修正全局文件 C:\Program Files\Common Files\Nikon\WinVer.ini
+12:28:21.701  启动: <REPO_DIR>\S-NXSTDO-011001WF-ALLIN-ALL___ (1).exe /debuglog
+12:28:21.732  安装进程 PID=37696；后台补丁线程已就绪
+12:28:24.887  已修正 C:\Users\<user>\AppData\Local\Temp\{74ACADBF-A5A8-430A-B0A1-0F10A51DFE28}\{3536D6BE}\welcome\Items\Launch.ini（加入 Win10.0_Over）
+12:28:25.507  已修正 C:\Users\<user>\AppData\Local\Temp\{74ACADBF-A5A8-430A-B0A1-0F10A51DFE28}\{3536D6BE}\WinVer.ini
+12:28:29.890  界面文字[Welcome]: 更新
+12:28:29.893  界面文字[Welcome]: 退出
+12:28:33.949  界面文字[DisplayRTF]: 下一步
+12:28:33.951  界面文字[DisplayRTF]: 取消
+12:28:33.952  界面文字[DisplayRTF]: 尼康工坊版本1.10.1 (Windows)
+12:28:35.991  界面文字[_isC5D5]: [ISProgressCaption]
+12:28:35.997  界面文字[_isC5D5]: 配置中
+12:28:35.999  界面文字[_isC5D5]: setup.exe
+12:28:38.025  界面文字[_isC5D5]: Profile
+12:28:40.048  界面文字[_isC5D5]: 正在安装软件包 尼康工坊
+12:28:40.050  界面文字[_isC5D5]: 尼康工坊
+12:29:02.354  界面文字[_isC5D5]: 正在安装软件包 Nikon Transfer 2
+12:29:02.358  界面文字[_isC5D5]: Nikon Transfer 2
+12:29:08.419  界面文字[_isC5D5]: 正在安装软件包 Profile
+12:29:20.562  界面文字[_isC5D5]: 正在安装软件包 Optional Picture Control
+12:29:20.563  界面文字[_isC5D5]: Optional Picture Control
+12:29:36.759  界面文字[_isC5D5]: 完成(F)
+12:29:36.761  界面文字[_isC5D5]: 安装完成。
+12:29:36.763  界面文字[_isC5D5]: 尼康工坊已成功安装。单击“完成”退出向导。
+12:29:46.861  安装进程退出码 = 0（0/3010 成功，1603 中止）
+12:29:46.874  结束。

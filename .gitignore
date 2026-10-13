@@ -1,0 +1,25 @@
+# ===== 绝对不要提交：尼康官方安装包 =====
+# 250 MB，超过 GitHub 单文件 100 MB 限制；且为尼康版权物，仓库不含任何尼康二进制。
+S-NXSTDO-*.exe
+*.exe
+*.msi
+*.cab
+*.dll
+
+# ===== 运行时产物 / 取证样本（含厂商二进制与个人路径）=====
+extract/
+stage/
+stage_v*/
+dist/
+*.bak_nxstudio_win10
+
+# ===== 日志（原始日志含本机用户名与临时路径）=====
+*.log
+*.etl
+*.tmp
+
+# ===== 杂项 =====
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
